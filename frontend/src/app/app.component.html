@@ -1,0 +1,29 @@
+<div class="card">
+  <h1>Inverseur de texte</h1>
+  <p class="subtitle">Saisissez un texte, il sera envoyé à l'API REST puis retourné inversé.</p>
+
+  <label for="textInput">Votre texte</label>
+  <input
+    id="textInput"
+    type="text"
+    [(ngModel)]="text"
+    (keydown.enter)="send()"
+    placeholder="Ex : bonjour"
+    autocomplete="off" />
+
+  <button type="button" (click)="send()" [disabled]="loading">
+    {{ loading ? 'Envoi...' : 'Envoyer' }}
+  </button>
+
+  @if (hasResult) {
+    <div class="result" [class.error]="error">
+      @if (error) {
+        <div class="label">Erreur</div>
+        <div class="value">{{ error }}</div>
+      } @else {
+        <div class="label">Texte inversé</div>
+        <div class="value">{{ reversed }}</div>
+      }
+    </div>
+  }
+</div>
