@@ -42,6 +42,12 @@ text-reverser/
 cd text-reverser
 mvn spring-boot:run
 ```
+ou
+```bash
+cd text-reverser
+.\mvnw.cmd spring-boot:run
+
+```
 L'API écoute sur **http://localhost:8080**.
 
 | Méthode | URL            | Corps (JSON)            | Réponse (JSON)                                     |
