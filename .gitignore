@@ -3,3 +3,6 @@ target/
 .idea/
 *.iml
 .vscode/
+
+# Keystore auto-signé (ne pas versionner les clés)
+*.p12

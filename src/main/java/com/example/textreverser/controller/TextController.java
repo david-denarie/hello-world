@@ -2,7 +2,8 @@ package com.example.textreverser.controller;
 
 import com.example.textreverser.dto.TextRequest;
 import com.example.textreverser.dto.TextResponse;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import jakarta.validation.Valid;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,12 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*") // Autorise les appels depuis n'importe quelle origine (pratique en dev)
 public class TextController {
 
-    @PostMapping("/reverse")
-    public TextResponse reverse(@RequestBody TextRequest request) {
-        String input = (request != null && request.getText() != null) ? request.getText() : "";
+    @PostMapping(
+        value = "/reverse",
+        consumes = MediaType.APPLICATION_JSON_VALUE,
+        produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public TextResponse reverse(@Valid @RequestBody TextRequest request) {
+        String input = request.getText();
 
         // Inversion en tenant compte des caractères Unicode (emojis, accents composés, etc.)
         String reversed = new StringBuilder(input).reverse().toString();
