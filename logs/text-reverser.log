@@ -1,0 +1,479 @@
+2026-08-21T10:11:56.174+02:00  INFO 20116 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Starting TextReverserApplication using Java 21.0.11 with PID 20116 (C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world\target\classes started by david.denarie in C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world)
+2026-08-21T10:11:56.192+02:00 DEBUG 20116 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-21T10:11:56.194+02:00  INFO 20116 --- [text-reverser] [main] c.e.t.TextReverserApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-21T10:11:57.470+02:00  INFO 20116 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2026-08-21T10:11:57.495+02:00  INFO 20116 --- [text-reverser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-21T10:11:57.496+02:00  INFO 20116 --- [text-reverser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-21T10:11:57.573+02:00  INFO 20116 --- [text-reverser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-21T10:11:57.574+02:00  INFO 20116 --- [text-reverser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2026-08-21T10:11:57.628+02:00 DEBUG 20116 --- [text-reverser] [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2026-08-21T10:11:57.707+02:00  WARN 20116 --- [text-reverser] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6f9ca26d-0409-4b65-ab9c-a19edc1c936b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-21T10:11:57.726+02:00  INFO 20116 --- [text-reverser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-21T10:11:57.911+02:00 DEBUG 20116 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2026-08-21T10:11:57.975+02:00 DEBUG 20116 --- [text-reverser] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-21T10:11:58.004+02:00 DEBUG 20116 --- [text-reverser] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-08-21T10:11:58.079+02:00 DEBUG 20116 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-08-21T10:11:58.124+02:00 DEBUG 20116 --- [text-reverser] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-08-21T10:11:58.413+02:00  INFO 20116 --- [text-reverser] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\ddenarie\.keystore] using alias [textreverser] with trust store [null]
+2026-08-21T10:11:58.439+02:00  INFO 20116 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/'
+2026-08-21T10:11:58.447+02:00  INFO 20116 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Started TextReverserApplication in 2.666 seconds (process running for 3.008)
+2026-08-21T10:14:51.964+02:00  INFO 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-21T10:14:51.965+02:00  INFO 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-21T10:14:51.965+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-08-21T10:14:51.966+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-08-21T10:14:51.966+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-08-21T10:14:51.966+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@719b66c9
+2026-08-21T10:14:51.967+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@327b3bfe
+2026-08-21T10:14:51.967+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-08-21T10:14:51.967+02:00  INFO 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-21T10:14:51.988+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T10:14:51.997+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T10:14:51.998+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T10:14:52.015+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T10:14:52.019+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T10:14:52.020+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T10:14:52.090+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.example.textreverser.dto.TextResponse com.example.textreverser.controller.TextController.uppercase(com.example.textreverser.dto.TextRequest): JSON parse error: Unexpected character (''' (code 39)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+2026-08-21T10:14:52.092+02:00  WARN 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (''' (code 39)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+2026-08-21T10:14:52.093+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-08-21T10:14:52.093+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload='{text:bonjour}']
+2026-08-21T10:14:52.101+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /error
+2026-08-21T10:14:52.101+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /error
+2026-08-21T10:14:52.102+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2026-08-21T10:14:52.102+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-08-21T10:14:52.111+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-08-21T10:14:52.113+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Aug 21 10:14:52 CEST 2026, status=400, error=Bad Request, path=/api/uppercase}]
+2026-08-21T10:14:52.133+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2026-08-21T10:14:52.133+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T10:15:06.429+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T10:15:06.430+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T10:15:06.430+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T10:15:06.431+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T10:15:06.431+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T10:15:06.431+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T10:15:06.433+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@44836815]
+2026-08-21T10:15:06.506+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2026-08-21T10:15:06.514+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@294bd4b6]
+2026-08-21T10:15:06.517+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T10:15:06.517+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"bonjour"}]
+2026-08-21T10:15:42.747+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T10:15:42.748+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T10:15:42.748+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T10:15:42.749+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T10:15:42.749+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T10:15:42.750+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T10:15:42.750+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@69306a37]
+2026-08-21T10:15:42.751+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2026-08-21T10:15:42.751+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@67f78961]
+2026-08-21T10:15:42.752+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T10:15:42.753+02:00 DEBUG 20116 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"bonjour"}]
+2026-08-21T10:19:07.791+02:00  INFO 32540 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Starting TextReverserApplication using Java 21.0.11 with PID 32540 (C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world\target\classes started by david.denarie in C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world)
+2026-08-21T10:19:07.794+02:00 DEBUG 32540 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-21T10:19:07.795+02:00  INFO 32540 --- [text-reverser] [main] c.e.t.TextReverserApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-21T10:19:08.814+02:00  INFO 32540 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2026-08-21T10:19:08.833+02:00  INFO 32540 --- [text-reverser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-21T10:19:08.834+02:00  INFO 32540 --- [text-reverser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-21T10:19:08.917+02:00  INFO 32540 --- [text-reverser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-21T10:19:08.918+02:00  INFO 32540 --- [text-reverser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1075 ms
+2026-08-21T10:19:08.965+02:00 DEBUG 32540 --- [text-reverser] [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2026-08-21T10:19:09.031+02:00  WARN 32540 --- [text-reverser] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 00b0d9aa-721a-43ee-8840-d7e21099b624
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-21T10:19:09.048+02:00  INFO 32540 --- [text-reverser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-21T10:19:09.148+02:00 DEBUG 32540 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2026-08-21T10:19:09.192+02:00 DEBUG 32540 --- [text-reverser] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-21T10:19:09.219+02:00 DEBUG 32540 --- [text-reverser] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-08-21T10:19:09.275+02:00 DEBUG 32540 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-08-21T10:19:09.302+02:00 DEBUG 32540 --- [text-reverser] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-08-21T10:19:09.554+02:00  INFO 32540 --- [text-reverser] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\ddenarie\.keystore] using alias [textreverser] with trust store [null]
+2026-08-21T10:19:09.579+02:00  INFO 32540 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/'
+2026-08-21T10:19:09.587+02:00  INFO 32540 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Started TextReverserApplication in 2.199 seconds (process running for 2.523)
+2026-08-21T10:20:01.737+02:00  INFO 33156 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Starting TextReverserApplication using Java 21.0.11 with PID 33156 (C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world\target\classes started by david.denarie in C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world)
+2026-08-21T10:20:01.739+02:00 DEBUG 33156 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-21T10:20:01.740+02:00  INFO 33156 --- [text-reverser] [main] c.e.t.TextReverserApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-21T10:20:02.669+02:00  INFO 33156 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2026-08-21T10:20:02.685+02:00  INFO 33156 --- [text-reverser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-21T10:20:02.686+02:00  INFO 33156 --- [text-reverser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-21T10:20:02.748+02:00  INFO 33156 --- [text-reverser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-21T10:20:02.749+02:00  INFO 33156 --- [text-reverser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2026-08-21T10:20:02.788+02:00 DEBUG 33156 --- [text-reverser] [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2026-08-21T10:20:02.849+02:00  WARN 33156 --- [text-reverser] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5ee4c29e-9f2e-4dcd-a67a-cc59086bc6e7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-21T10:20:02.862+02:00  INFO 33156 --- [text-reverser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-21T10:20:02.961+02:00 DEBUG 33156 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2026-08-21T10:20:03.005+02:00 DEBUG 33156 --- [text-reverser] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-21T10:20:03.035+02:00 DEBUG 33156 --- [text-reverser] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-08-21T10:20:03.095+02:00 DEBUG 33156 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-08-21T10:20:03.123+02:00 DEBUG 33156 --- [text-reverser] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-08-21T10:20:03.326+02:00  INFO 33156 --- [text-reverser] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\ddenarie\.keystore] using alias [textreverser] with trust store [null]
+2026-08-21T10:20:03.343+02:00  INFO 33156 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/'
+2026-08-21T10:20:03.350+02:00  INFO 33156 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Started TextReverserApplication in 2.005 seconds (process running for 2.323)
+2026-08-21T10:51:44.173+02:00  INFO 7656 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Starting TextReverserApplication using Java 21.0.11 with PID 7656 (C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world\target\classes started by david.denarie in C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world)
+2026-08-21T10:51:44.177+02:00 DEBUG 7656 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-21T10:51:44.177+02:00  INFO 7656 --- [text-reverser] [main] c.e.t.TextReverserApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-21T10:51:45.631+02:00  INFO 7656 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2026-08-21T10:51:45.657+02:00  INFO 7656 --- [text-reverser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-21T10:51:45.658+02:00  INFO 7656 --- [text-reverser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-21T10:51:45.749+02:00  INFO 7656 --- [text-reverser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-21T10:51:45.750+02:00  INFO 7656 --- [text-reverser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1533 ms
+2026-08-21T10:51:45.813+02:00 DEBUG 7656 --- [text-reverser] [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2026-08-21T10:51:45.909+02:00  WARN 7656 --- [text-reverser] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1d47413f-cd07-4b58-96cb-88e752c148c2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-21T10:51:45.934+02:00  INFO 7656 --- [text-reverser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-21T10:51:46.108+02:00 DEBUG 7656 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2026-08-21T10:51:46.174+02:00 DEBUG 7656 --- [text-reverser] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-21T10:51:46.203+02:00 DEBUG 7656 --- [text-reverser] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-08-21T10:51:46.282+02:00 DEBUG 7656 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-08-21T10:51:46.328+02:00 DEBUG 7656 --- [text-reverser] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-08-21T10:51:46.775+02:00  INFO 7656 --- [text-reverser] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\ddenarie\.keystore] using alias [textreverser] with trust store [null]
+2026-08-21T10:51:46.829+02:00  INFO 7656 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/'
+2026-08-21T10:51:46.842+02:00  INFO 7656 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Started TextReverserApplication in 3.056 seconds (process running for 3.398)
+2026-08-21T11:00:12.204+02:00  INFO 37472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Starting TextReverserApplication using Java 21.0.11 with PID 37472 (C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world\target\classes started by david.denarie in C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world)
+2026-08-21T11:00:12.206+02:00 DEBUG 37472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-21T11:00:12.207+02:00  INFO 37472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-21T11:00:13.374+02:00  INFO 37472 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2026-08-21T11:00:13.393+02:00  INFO 37472 --- [text-reverser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-21T11:00:13.394+02:00  INFO 37472 --- [text-reverser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-21T11:00:13.467+02:00  INFO 37472 --- [text-reverser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-21T11:00:13.468+02:00  INFO 37472 --- [text-reverser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1214 ms
+2026-08-21T11:00:13.532+02:00 DEBUG 37472 --- [text-reverser] [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2026-08-21T11:00:13.615+02:00  WARN 37472 --- [text-reverser] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8de82a3c-03f8-4da2-b3bb-a2f624385c8e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-21T11:00:13.631+02:00  INFO 37472 --- [text-reverser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-21T11:00:13.754+02:00 DEBUG 37472 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2026-08-21T11:00:13.805+02:00 DEBUG 37472 --- [text-reverser] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-21T11:00:13.836+02:00 DEBUG 37472 --- [text-reverser] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-08-21T11:00:13.935+02:00 DEBUG 37472 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-08-21T11:00:13.969+02:00 DEBUG 37472 --- [text-reverser] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-08-21T11:00:14.194+02:00  INFO 37472 --- [text-reverser] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\ddenarie\.keystore] using alias [textreverser] with trust store [null]
+2026-08-21T11:00:14.216+02:00  INFO 37472 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/'
+2026-08-21T11:00:14.223+02:00  INFO 37472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Started TextReverserApplication in 2.462 seconds (process running for 2.861)
+2026-08-21T11:05:10.992+02:00  INFO 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-21T11:05:10.995+02:00  INFO 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-21T11:05:10.995+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-08-21T11:05:10.995+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-08-21T11:05:10.995+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-08-21T11:05:10.996+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6330ad3d
+2026-08-21T11:05:10.997+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@c64f6cf
+2026-08-21T11:05:10.997+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-08-21T11:05:10.997+02:00  INFO 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-21T11:05:11.042+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:05:11.085+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:05:11.088+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:05:11.127+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:05:11.134+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:05:11.137+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:05:11.290+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@4e8fec33]
+2026-08-21T11:05:11.402+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:05:11.422+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@6f7f9df5]
+2026-08-21T11:05:11.445+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:05:11.447+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"Toto"}]
+2026-08-21T11:05:58.377+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:05:58.379+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:05:58.380+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:05:58.380+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:05:58.381+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:05:58.381+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:05:58.383+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@14a70cf9]
+2026-08-21T11:05:58.384+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:05:58.384+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@1a60e01d]
+2026-08-21T11:05:58.386+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:05:58.387+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"Totorezrezr"}]
+2026-08-21T11:06:48.603+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:06:48.605+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:06:48.605+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:06:48.605+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:06:48.606+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:06:48.606+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:06:48.607+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@74c3fdf4]
+2026-08-21T11:06:48.608+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:06:48.608+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@1e331ec3]
+2026-08-21T11:06:48.610+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:06:48.611+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"Totorezrezr"}]
+2026-08-21T11:06:54.844+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:06:54.845+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:06:54.845+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:06:54.845+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:06:54.846+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:06:54.846+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:06:54.847+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@1e5f6789]
+2026-08-21T11:06:54.848+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:06:54.848+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@5b5dea26]
+2026-08-21T11:06:54.850+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:06:54.850+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"Totorezrezrhguty"}]
+2026-08-21T11:06:57.271+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:06:57.272+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:06:57.272+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:06:57.272+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:06:57.273+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:06:57.274+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:06:57.275+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@5e9a231]
+2026-08-21T11:06:57.276+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:06:57.276+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@606690dd]
+2026-08-21T11:06:57.277+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:06:57.278+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"Totorezrezrhguty"}]
+2026-08-21T11:07:07.286+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T11:07:07.287+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:07:07.288+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T11:07:07.288+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T11:07:07.288+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T11:07:07.289+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T11:07:07.290+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@7731e570]
+2026-08-21T11:07:07.291+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:07:07.291+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@6a4c9383]
+2026-08-21T11:07:07.292+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:07:07.294+02:00 DEBUG 37472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"hjgjg"}]
+2026-08-21T11:09:21.540+02:00  INFO 17472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Starting TextReverserApplication using Java 21.0.11 with PID 17472 (C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world\target\classes started by david.denarie in C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world)
+2026-08-21T11:09:21.542+02:00 DEBUG 17472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-21T11:09:21.544+02:00  INFO 17472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-21T11:09:22.654+02:00  INFO 17472 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2026-08-21T11:09:22.672+02:00  INFO 17472 --- [text-reverser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-21T11:09:22.673+02:00  INFO 17472 --- [text-reverser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-21T11:09:22.731+02:00  INFO 17472 --- [text-reverser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-21T11:09:22.731+02:00  INFO 17472 --- [text-reverser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
+2026-08-21T11:09:22.783+02:00 DEBUG 17472 --- [text-reverser] [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2026-08-21T11:09:22.857+02:00  WARN 17472 --- [text-reverser] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3e4176e3-c2e5-491a-80ac-7a84ee04ec41
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-21T11:09:22.871+02:00  INFO 17472 --- [text-reverser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-21T11:09:22.978+02:00 DEBUG 17472 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2026-08-21T11:09:23.026+02:00 DEBUG 17472 --- [text-reverser] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-21T11:09:23.054+02:00 DEBUG 17472 --- [text-reverser] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-08-21T11:09:23.129+02:00 DEBUG 17472 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-08-21T11:09:23.162+02:00 DEBUG 17472 --- [text-reverser] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-08-21T11:09:23.374+02:00  INFO 17472 --- [text-reverser] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\ddenarie\.keystore] using alias [textreverser] with trust store [null]
+2026-08-21T11:09:23.395+02:00  INFO 17472 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/'
+2026-08-21T11:09:23.402+02:00  INFO 17472 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Started TextReverserApplication in 2.282 seconds (process running for 2.644)
+2026-08-21T11:09:43.463+02:00  INFO 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-21T11:09:43.463+02:00  INFO 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-21T11:09:43.464+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-08-21T11:09:43.465+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-08-21T11:09:43.465+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-08-21T11:09:43.467+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68766fdb
+2026-08-21T11:09:43.467+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@98582a8
+2026-08-21T11:09:43.468+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-08-21T11:09:43.469+02:00  INFO 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-08-21T11:09:43.500+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:09:43.528+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:09:43.530+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:09:43.546+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:09:43.550+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:09:43.552+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:09:43.644+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@21c894c]
+2026-08-21T11:09:43.732+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:09:43.756+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@644a49d8]
+2026-08-21T11:09:43.772+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:09:43.774+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"fdsqfds"}]
+2026-08-21T11:09:59.193+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T11:09:59.195+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:09:59.196+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T11:09:59.196+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T11:09:59.196+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T11:09:59.197+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T11:09:59.199+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@40bd46c5]
+2026-08-21T11:09:59.200+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:09:59.200+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@4e7aa0a2]
+2026-08-21T11:09:59.202+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:09:59.203+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"fdsfdsf"}]
+2026-08-21T11:11:07.997+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T11:11:08.000+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:11:08.000+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T11:11:08.001+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T11:11:08.001+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T11:11:08.001+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T11:11:08.002+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@16c5f89d]
+2026-08-21T11:11:08.003+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:11:08.004+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@402d2d47]
+2026-08-21T11:11:08.005+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:11:08.006+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"fdfd"}]
+2026-08-21T11:11:11.013+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T11:11:11.015+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:11:11.015+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T11:11:11.015+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T11:11:11.016+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T11:11:11.016+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T11:11:11.018+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@4a452db5]
+2026-08-21T11:11:11.019+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:11:11.020+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@f47aa99]
+2026-08-21T11:11:11.021+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:11:11.022+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"fdfd"}]
+2026-08-21T11:12:25.682+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T11:12:25.685+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:12:25.685+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T11:12:25.686+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T11:12:25.686+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T11:12:25.687+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T11:12:25.688+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@6dd5fd4f]
+2026-08-21T11:12:25.689+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:12:25.689+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@9c5a1e6]
+2026-08-21T11:12:25.691+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:12:25.691+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"fdsfds"}]
+2026-08-21T11:12:29.279+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T11:12:29.280+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:12:29.282+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T11:12:29.282+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T11:12:29.282+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T11:12:29.283+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T11:12:29.284+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@25e64eda]
+2026-08-21T11:12:29.284+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:12:29.285+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@3e028574]
+2026-08-21T11:12:29.286+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:12:29.286+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"fdsfdsfdsfds"}]
+2026-08-21T11:12:34.032+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:12:34.033+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:12:34.033+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:12:34.034+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:12:34.035+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:12:34.035+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:12:34.038+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@307da153]
+2026-08-21T11:12:34.038+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:12:34.039+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@1993f50e]
+2026-08-21T11:12:34.040+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:12:34.040+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"fdsfds"}]
+2026-08-21T11:12:37.593+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:12:37.594+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:12:37.594+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:12:37.594+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:12:37.595+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:12:37.595+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:12:37.597+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@5d493f84]
+2026-08-21T11:12:37.597+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:12:37.598+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@6f6855d6]
+2026-08-21T11:12:37.599+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:12:37.599+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"fdsfdsfdsfdsfds"}]
+2026-08-21T11:12:42.174+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:12:42.175+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:12:42.176+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:12:42.176+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:12:42.176+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:12:42.177+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:12:42.177+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@5bee5cf6]
+2026-08-21T11:12:42.178+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:12:42.179+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@7f801cfc]
+2026-08-21T11:12:42.180+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:12:42.180+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"super"}]
+2026-08-21T11:12:48.274+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T11:12:48.276+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:12:48.277+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T11:12:48.277+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T11:12:48.277+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T11:12:48.279+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T11:12:48.279+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@78ef467f]
+2026-08-21T11:12:48.280+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:12:48.280+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@526c5533]
+2026-08-21T11:12:48.281+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:12:48.281+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"repus"}]
+2026-08-21T11:13:00.082+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T11:13:00.083+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T11:13:00.084+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T11:13:00.084+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T11:13:00.085+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T11:13:00.085+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T11:13:00.086+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@222a5d66]
+2026-08-21T11:13:00.087+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T11:13:00.087+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@2417f7a8]
+2026-08-21T11:13:00.089+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T11:13:00.090+02:00 DEBUG 17472 --- [text-reverser] [https-jsse-nio-8443-exec-5] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"Super"}]
+2026-08-21T16:10:38.954+02:00  INFO 27960 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Starting TextReverserApplication using Java 21.0.11 with PID 27960 (C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world\target\classes started by david.denarie in C:\Users\ddenarie\OneDrive - Axway Software\Mes documents\Projects\github\helloworld\hello-world)
+2026-08-21T16:10:38.956+02:00 DEBUG 27960 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-21T16:10:38.957+02:00  INFO 27960 --- [text-reverser] [main] c.e.t.TextReverserApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-08-21T16:10:39.928+02:00  INFO 27960 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8443 (https)
+2026-08-21T16:10:39.946+02:00  INFO 27960 --- [text-reverser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-21T16:10:39.947+02:00  INFO 27960 --- [text-reverser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-21T16:10:40.017+02:00  INFO 27960 --- [text-reverser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-21T16:10:40.018+02:00  INFO 27960 --- [text-reverser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1022 ms
+2026-08-21T16:10:40.058+02:00 DEBUG 27960 --- [text-reverser] [main] o.s.w.f.CommonsRequestLoggingFilter      : Filter 'requestLoggingFilter' configured for use
+2026-08-21T16:10:40.117+02:00  WARN 27960 --- [text-reverser] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e673ffa7-52b5-4568-a25e-adc78e9f5a98
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-08-21T16:10:40.130+02:00  INFO 27960 --- [text-reverser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-08-21T16:10:40.229+02:00 DEBUG 27960 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2026-08-21T16:10:40.277+02:00 DEBUG 27960 --- [text-reverser] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-08-21T16:10:40.306+02:00 DEBUG 27960 --- [text-reverser] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-08-21T16:10:40.361+02:00 DEBUG 27960 --- [text-reverser] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-08-21T16:10:40.389+02:00 DEBUG 27960 --- [text-reverser] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-08-21T16:10:40.609+02:00  INFO 27960 --- [text-reverser] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\ddenarie\.keystore] using alias [textreverser] with trust store [null]
+2026-08-21T16:10:40.634+02:00  INFO 27960 --- [text-reverser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8443 (https) with context path '/'
+2026-08-21T16:10:40.642+02:00  INFO 27960 --- [text-reverser] [main] c.e.t.TextReverserApplication            : Started TextReverserApplication in 2.12 seconds (process running for 2.482)
+2026-08-21T16:26:59.645+02:00  INFO 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-21T16:26:59.646+02:00  INFO 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-21T16:26:59.647+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-08-21T16:26:59.647+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-08-21T16:26:59.648+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-08-21T16:26:59.649+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@59d63ec7
+2026-08-21T16:26:59.649+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@130bc7ee
+2026-08-21T16:26:59.650+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-08-21T16:26:59.651+02:00  INFO 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-08-21T16:26:59.672+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T16:26:59.694+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T16:26:59.695+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T16:26:59.709+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T16:26:59.712+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T16:26:59.714+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T16:26:59.779+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@1962a51e]
+2026-08-21T16:26:59.840+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.textreverser.config.GlobalExceptionHandler#handleValidationErrors(MethodArgumentNotValidException)
+2026-08-21T16:26:59.850+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-21T16:26:59.852+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Validation échouée, details=text: Le champ 'text' ne doit pas être vide}]
+2026-08-21T16:26:59.864+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.textreverser.dto.TextResponse com.example.textreverser.controller.TextController.reverse(com.example.textreverser.dto.TextRequest): [Field error in object 'textRequest' on field 'text': rejected value []; codes [NotBlank.textRequest.text,NotBlank.text,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [textRequest.text,text]; arguments []; default message [text]]; default message [Le champ 'text' ne doit pas être vide]] ]
+2026-08-21T16:26:59.865+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-08-21T16:26:59.866+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":""}]
+2026-08-21T16:27:02.083+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/reverse
+2026-08-21T16:27:02.084+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T16:27:02.084+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/reverse
+2026-08-21T16:27:02.085+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/reverse]
+2026-08-21T16:27:02.085+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/reverse", parameters={}
+2026-08-21T16:27:02.086+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#reverse(TextRequest)
+2026-08-21T16:27:02.087+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@2cf44fe5]
+2026-08-21T16:27:02.090+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T16:27:02.095+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@1b4e5141]
+2026-08-21T16:27:02.097+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T16:27:02.099+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/reverse, payload={"text":"rzerezr"}]
+2026-08-21T16:27:29.856+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T16:27:29.857+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T16:27:29.857+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T16:27:29.858+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T16:27:29.858+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T16:27:29.859+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T16:27:29.860+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@618c2ec9]
+2026-08-21T16:27:29.860+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.textreverser.config.GlobalExceptionHandler#handleValidationErrors(MethodArgumentNotValidException)
+2026-08-21T16:27:29.861+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-08-21T16:27:29.861+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Validation échouée, details=text: Le champ 'text' ne doit pas être vide}]
+2026-08-21T16:27:29.862+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.textreverser.dto.TextResponse com.example.textreverser.controller.TextController.uppercase(com.example.textreverser.dto.TextRequest): [Field error in object 'textRequest' on field 'text': rejected value []; codes [NotBlank.textRequest.text,NotBlank.text,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [textRequest.text,text]; arguments []; default message [text]]; default message [Le champ 'text' ne doit pas être vide]] ]
+2026-08-21T16:27:29.862+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-08-21T16:27:29.863+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":""}]
+2026-08-21T16:27:34.023+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/uppercase
+2026-08-21T16:27:34.024+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-08-21T16:27:34.024+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/uppercase
+2026-08-21T16:27:34.024+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : Before request [POST /api/uppercase]
+2026-08-21T16:27:34.025+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/uppercase", parameters={}
+2026-08-21T16:27:34.026+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.textreverser.controller.TextController#uppercase(TextRequest)
+2026-08-21T16:27:34.027+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.textreverser.dto.TextRequest@3b32b0ac]
+2026-08-21T16:27:34.028+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json]
+2026-08-21T16:27:34.028+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.example.textreverser.dto.TextResponse@521f3ad2]
+2026-08-21T16:27:34.029+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-08-21T16:27:34.029+02:00 DEBUG 27960 --- [text-reverser] [https-jsse-nio-8443-exec-10] o.s.w.f.CommonsRequestLoggingFilter      : REQUEST: POST /api/uppercase, payload={"text":"fdsfds"}]

@@ -1,0 +1,37 @@
+<div class="page">
+  <a routerLink="/" class="back-link">&larr; Retour à l'accueil</a>
+
+  <div class="card">
+    <div class="card-header card-header--reverse">
+      <span class="card-icon">&#8634;</span>
+      <h1>Inverser le texte</h1>
+    </div>
+
+    <p class="description">Saisissez un texte, il sera inversé par l'API.</p>
+
+    <label for="textInput">Votre texte</label>
+    <input
+      id="textInput"
+      type="text"
+      [(ngModel)]="text"
+      (keydown.enter)="send()"
+      placeholder="Ex : bonjour"
+      autocomplete="off" />
+
+    <button type="button" (click)="send()" [disabled]="loading">
+      {{ loading ? 'Envoi...' : 'Inverser' }}
+    </button>
+
+    @if (hasResult) {
+      <div class="result" [class.error]="error">
+        @if (error) {
+          <div class="label">Erreur</div>
+          <div class="value">{{ error }}</div>
+        } @else {
+          <div class="label">Texte inversé</div>
+          <div class="value">{{ result }}</div>
+        }
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,28 @@
+# Build outputs
+target/
+frontend/dist/
+frontend/.angular/
+
+# Dependencies (rebuilt in Docker)
+frontend/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Git
+.git/
+.gitignore
+
+# Keystore dev (le conteneur tourne en HTTP derrière un reverse proxy)
+src/main/resources/keystore.p12
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore

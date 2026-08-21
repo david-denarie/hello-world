@@ -1,98 +1,139 @@
-# Text Reverser — Java (Spring Boot) + Angular
+# Text Transformer — Java (Spring Boot) + Angular
 
-Projet full-stack démontrant :
-- **Front-end** : une application **Angular 18** (`frontend/`) avec un champ de saisie texte et un bouton « Envoyer ».
-- **Back-end** : une API REST en **Java / Spring Boot** qui reçoit le texte et le retourne **inversé**.
+Application full-stack de transformation de texte :
+- **Front-end** : application **Angular 22** (`frontend/`) avec une page d'accueil et des pages dédiées pour chaque transformation.
+- **Back-end** : API REST en **Java 17 / Spring Boot 3.3** avec sécurité (Spring Security, validation, rate limiting).
 
 ## Structure du projet
 
 ```
 text-reverser/
-├── pom.xml                                        # Back-end Maven / Spring Boot
+├── pom.xml                                         # Back-end Maven / Spring Boot
+├── Dockerfile                                      # Build multi-stage (Node + Maven + JRE)
+├── docker-compose.yml                              # Lancement Docker simplifié
 ├── src
 │   ├── main/java/com/example/textreverser
-│   │   ├── TextReverserApplication.java           # Point d'entrée Spring Boot
-│   │   ├── controller/TextController.java          # API REST POST /api/reverse
-│   │   └── dto/{TextRequest,TextResponse}.java     # Objets JSON entrée/sortie
-│   ├── main/resources/application.properties       # Port 8080
+│   │   ├── TextReverserApplication.java            # Point d'entrée Spring Boot
+│   │   ├── controller/TextController.java          # API REST : /api/health, /api/reverse, /api/uppercase
+│   │   ├── dto/TextRequest.java                    # DTO entrée (avec validation)
+│   │   ├── dto/TextResponse.java                   # DTO sortie (original + result)
+│   │   └── config/
+│   │       ├── SecurityConfig.java                 # CORS, headers sécurité, session stateless
+│   │       ├── RateLimitingFilter.java             # Rate limit 20 req/min par IP
+│   │       ├── WebConfig.java                      # Sert le frontend Angular (SPA fallback)
+│   │       ├── RequestLoggingConfig.java           # Log du body des requêtes (dev)
+│   │       └── GlobalExceptionHandler.java         # Erreurs de validation → 400 propre
+│   ├── main/resources/
+│   │   ├── application.properties                  # Profil par défaut (HTTPS, port 8443)
+│   │   ├── application-docker.properties           # Profil Docker (HTTP, port 8080)
+│   │   └── keystore.p12                            # Certificat auto-signé (dev uniquement)
 │   └── test/.../TextControllerTest.java            # Tests unitaires back
-└── frontend                                        # Application Angular
+└── frontend/                                       # Application Angular 22
     ├── package.json
     ├── angular.json
-    ├── proxy.conf.json                             # Redirige /api -> localhost:8080
-    ├── tsconfig*.json
-    └── src
-        ├── index.html
-        ├── main.ts
-        ├── styles.css
-        └── app
-            ├── app.config.ts                       # provideHttpClient()
-            ├── app.component.ts / .html / .css     # UI : champ + bouton
-            ├── app.component.spec.ts               # Test unitaire front
-            └── text-reverser.service.ts            # Appel HTTP à l'API
+    ├── proxy.conf.json                             # Redirige /api → https://localhost:8443
+    └── src/app/
+        ├── app.component.ts                        # Shell avec router-outlet
+        ├── app.config.ts                           # Providers (HttpClient, Router)
+        ├── app.routes.ts                           # Routes : /, /reverse, /uppercase
+        ├── text-reverser.service.ts                # Service HTTP (reverse + uppercase)
+        └── pages/
+            ├── home/home.component.*               # Page d'accueil avec menu
+            ├── reverse/reverse.component.*         # Page inversion de texte
+            └── uppercase/uppercase.component.*     # Page mise en majuscules
 ```
 
 ## Prérequis
-- **Java 17+** et **Maven 3.8+** (back-end)
-- **Node.js 18+** et **npm** (front-end Angular)
 
-## 1) Lancer le back-end (API REST)
+### Développement local
+- **Java 17+** et **Maven 3.8+**
+- **Node.js 22+** et **npm**
+
+### Déploiement Docker
+- **Docker** et **Docker Compose**
+
+## Développement local
+
+### Lancer le back-end (HTTPS, port 8443)
 
 ```bash
-cd text-reverser
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
-L'API écoute sur **http://localhost:8080**.
 
-| Méthode | URL            | Corps (JSON)            | Réponse (JSON)                                     |
-|---------|----------------|-------------------------|----------------------------------------------------|
-| POST    | `/api/reverse` | `{ "text": "bonjour" }` | `{ "original": "bonjour", "reversed": "ruojnob" }` |
+L'API écoute sur **https://localhost:8443**.
 
-## 2) Lancer le front-end (Angular)
-
-Dans un second terminal :
+### Lancer le front-end (port 4200)
 
 ```bash
-cd text-reverser/frontend
+cd frontend
 npm install
-npm start            # = ng serve --proxy-config proxy.conf.json
+npm start
 ```
-Ouvrez ensuite **http://localhost:4200**.
 
-> Le fichier `proxy.conf.json` redirige automatiquement les appels `/api/*`
-> du serveur de dev Angular (4200) vers le back-end Spring Boot (8080),
-> ce qui évite tout problème de CORS pendant le développement.
+Ouvrez **http://localhost:4200**. Le proxy redirige `/api/*` vers le backend HTTPS.
 
-## Tester avec curl (back-end seul)
+## API REST
+
+| Méthode | URL              | Corps (JSON)            | Réponse (JSON)                                    |
+|---------|------------------|-------------------------|---------------------------------------------------|
+| GET     | `/api/health`    | —                       | `{ "status": "UP" }`                              |
+| POST    | `/api/reverse`   | `{ "text": "bonjour" }` | `{ "original": "bonjour", "result": "ruojnob" }`  |
+| POST    | `/api/uppercase` | `{ "text": "bonjour" }` | `{ "original": "bonjour", "result": "BONJOUR" }`  |
+
+### Validation
+
+- Le champ `text` est obligatoire (non vide) et limité à 10 000 caractères.
+- `Content-Type: application/json` requis.
+- Rate limit : 20 requêtes/minute par IP.
+
+### Tester avec curl
 
 ```bash
-curl -X POST http://localhost:8080/api/reverse \
-     -H "Content-Type: application/json" \
-     -d '{"text":"bonjour"}'
+curl -k -X POST https://localhost:8443/api/reverse -H "Content-Type: application/json" -d '{"text":"bonjour"}'
+curl -k -X POST https://localhost:8443/api/uppercase -H "Content-Type: application/json" -d '{"text":"bonjour"}'
 ```
 
-## Lancer les tests
+## Déploiement Docker
+
+```bash
+# Build et lancement
+docker compose up --build
+
+# En arrière-plan
+docker compose up --build -d
+
+# Arrêter
+docker compose down
+```
+
+L'application est accessible sur **http://localhost:8080** (HTTP, le TLS est terminé par un reverse proxy en production).
+
+### Déployer sur un autre poste
+
+```bash
+# Exporter l'image
+docker save hello-world-text-reverser:latest | gzip > text-reverser.tar.gz
+
+# Sur l'autre poste
+docker load < text-reverser.tar.gz
+docker run -p 8080:8080 hello-world-text-reverser:latest
+```
+
+## Tests
 
 ```bash
 # Back-end
-mvn test
+./mvnw test
 
 # Front-end
 cd frontend && npm test
 ```
 
-## Build de production
+## Sécurité
 
-```bash
-# Back-end : JAR exécutable
-mvn clean package
-java -jar target/text-reverser-1.0.0.jar
-
-# Front-end : build optimisé dans frontend/dist/
-cd frontend && npm run build
-```
-
-> Pour un déploiement unifié, vous pouvez copier le contenu de
-> `frontend/dist/text-reverser-frontend/browser/` dans
-> `src/main/resources/static/` du back-end afin que Spring Boot serve
-> directement l'application Angular sur le port 8080.
+- CORS restreint aux origines autorisées
+- Headers HTTP : HSTS, CSP, X-Content-Type-Options, X-Frame-Options
+- Validation des entrées (Bean Validation)
+- Rate limiting par IP (Bucket4j)
+- HTTPS en développement (certificat auto-signé)
+- Session stateless, CSRF désactivé (API REST)

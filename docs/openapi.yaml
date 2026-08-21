@@ -1,0 +1,177 @@
+openapi: 3.0.3
+info:
+  title: Text Transformer API
+  description: API REST de transformation de texte (inversion, mise en majuscules).
+  version: 1.0.0
+  contact:
+    name: Text Transformer
+
+servers:
+  - url: https://localhost:8443
+    description: Développement local (HTTPS)
+  - url: http://localhost:8080
+    description: Docker / Production (HTTP, derrière reverse proxy)
+
+paths:
+  /api/health:
+    get:
+      summary: Healthcheck
+      description: Vérifie que l'application est en fonctionnement.
+      operationId: health
+      tags:
+        - Health
+      responses:
+        "200":
+          description: Application disponible
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+              example:
+                status: UP
+
+  /api/reverse:
+    post:
+      summary: Inverser un texte
+      description: Reçoit un texte et retourne sa version inversée (caractère par caractère).
+      operationId: reverseText
+      tags:
+        - Transformation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TextRequest"
+            example:
+              text: bonjour
+      responses:
+        "200":
+          description: Texte inversé avec succès
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TextResponse"
+              example:
+                original: bonjour
+                result: ruojnob
+        "400":
+          description: Erreur de validation (texte vide ou trop long)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidationError"
+              example:
+                error: Validation échouée
+                details: "text: Le champ 'text' ne doit pas être vide"
+        "429":
+          description: Trop de requêtes (rate limit dépassé)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RateLimitError"
+              example:
+                error: Trop de requêtes. Veuillez réessayer dans quelques instants.
+
+  /api/uppercase:
+    post:
+      summary: Mettre un texte en majuscules
+      description: Reçoit un texte et retourne sa version en majuscules.
+      operationId: uppercaseText
+      tags:
+        - Transformation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TextRequest"
+            example:
+              text: bonjour
+      responses:
+        "200":
+          description: Texte converti en majuscules avec succès
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TextResponse"
+              example:
+                original: bonjour
+                result: BONJOUR
+        "400":
+          description: Erreur de validation (texte vide ou trop long)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidationError"
+              example:
+                error: Validation échouée
+                details: "text: Le champ 'text' ne doit pas être vide"
+        "429":
+          description: Trop de requêtes (rate limit dépassé)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RateLimitError"
+              example:
+                error: Trop de requêtes. Veuillez réessayer dans quelques instants.
+
+components:
+  schemas:
+    TextRequest:
+      type: object
+      required:
+        - text
+      properties:
+        text:
+          type: string
+          minLength: 1
+          maxLength: 10000
+          description: Texte à transformer (obligatoire, max 10 000 caractères).
+          example: bonjour
+
+    TextResponse:
+      type: object
+      properties:
+        original:
+          type: string
+          description: Texte original envoyé par le client.
+          example: bonjour
+        result:
+          type: string
+          description: Texte transformé.
+          example: ruojnob
+
+    HealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          description: État de l'application.
+          example: UP
+
+    ValidationError:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Message d'erreur général.
+          example: Validation échouée
+        details:
+          type: string
+          description: Détails des champs en erreur.
+          example: "text: Le champ 'text' ne doit pas être vide"
+
+    RateLimitError:
+      type: object
+      properties:
+        error:
+          type: string
+          description: Message d'erreur de rate limiting.
+          example: Trop de requêtes. Veuillez réessayer dans quelques instants.
+
+tags:
+  - name: Health
+    description: Endpoints de monitoring
+  - name: Transformation
+    description: Endpoints de transformation de texte
