@@ -1,13 +1,15 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
+import { routes } from './app.routes';
 
 /**
  * Configuration de l'application standalone.
- * On enregistre le HttpClient pour pouvoir appeler l'API REST.
+ * On enregistre le HttpClient et le routeur.
  */
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideZoneChangeDetection({ eventCoalescing: true }),
-    provideHttpClient()
+    provideHttpClient(),
+    provideRouter(routes)
   ]
 };

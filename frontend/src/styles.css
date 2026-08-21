@@ -1,11 +1,29 @@
-/* Styles globaux */
-* {
+/* ─── Reset & base ─────────────────────────────── */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: #f3f4f6;
-  color: #111827;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #eee;
+  background: #0a0a12;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(108, 99, 255, 0.4);
+  color: #fff;
 }

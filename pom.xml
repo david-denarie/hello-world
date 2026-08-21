@@ -15,7 +15,7 @@
     <artifactId>text-reverser</artifactId>
     <version>1.0.0</version>
     <name>text-reverser</name>
-    <description>Projet demo : front avec champ de saisie + API REST qui inverse le texte</description>
+    <description>Application de transformation de texte : API REST (reverse, uppercase) + frontend Angular</description>
 
     <properties>
         <java.version>17</java.version>

@@ -4,21 +4,32 @@ import com.example.textreverser.dto.TextRequest;
 import com.example.textreverser.dto.TextResponse;
 import jakarta.validation.Valid;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 /**
- * Contrôleur REST qui reçoit un texte et le retourne inversé.
+ * Contrôleur REST pour les transformations de texte.
  *
- * Endpoint : POST /api/reverse
+ * Endpoints :
+ *   GET  /api/health    → healthcheck
+ *   POST /api/reverse   → inverse le texte
+ *   POST /api/uppercase → met le texte en majuscules
+ *
  * Corps attendu (JSON) : { "text": "bonjour" }
- * Réponse (JSON)      : { "original": "bonjour", "reversed": "ruojnob" }
  */
 @RestController
 @RequestMapping("/api")
 public class TextController {
+
+    @GetMapping("/health")
+    public Map<String, String> health() {
+        return Map.of("status", "UP");
+    }
 
     @PostMapping(
         value = "/reverse",
@@ -27,10 +38,20 @@ public class TextController {
     )
     public TextResponse reverse(@Valid @RequestBody TextRequest request) {
         String input = request.getText();
-
-        // Inversion en tenant compte des caractères Unicode (emojis, accents composés, etc.)
         String reversed = new StringBuilder(input).reverse().toString();
 
         return new TextResponse(input, reversed);
+    }
+
+    @PostMapping(
+        value = "/uppercase",
+        consumes = MediaType.APPLICATION_JSON_VALUE,
+        produces = MediaType.APPLICATION_JSON_VALUE
+    )
+    public TextResponse uppercase(@Valid @RequestBody TextRequest request) {
+        String input = request.getText();
+        String uppercased = input.toUpperCase();
+
+        return new TextResponse(input, uppercased);
     }
 }

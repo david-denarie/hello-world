@@ -1,20 +1,21 @@
 package com.example.textreverser.dto;
 
 /**
- * Objet renvoyé par l'API REST (corps de la réponse JSON).
- * Exemple : { "original": "bonjour", "reversed": "ruojnob" }
+ * Objet renvoyé par les API REST de transformation de texte.
+ *
+ * Exemple : { "original": "bonjour", "result": "BONJOUR" }
  */
 public class TextResponse {
 
     private String original;
-    private String reversed;
+    private String result;
 
     public TextResponse() {
     }
 
-    public TextResponse(String original, String reversed) {
+    public TextResponse(String original, String result) {
         this.original = original;
-        this.reversed = reversed;
+        this.result = result;
     }
 
     public String getOriginal() {
@@ -25,11 +26,11 @@ public class TextResponse {
         this.original = original;
     }
 
-    public String getReversed() {
-        return reversed;
+    public String getResult() {
+        return result;
     }
 
-    public void setReversed(String reversed) {
-        this.reversed = reversed;
+    public void setResult(String result) {
+        this.result = result;
     }
 }

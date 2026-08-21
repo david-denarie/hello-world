@@ -1,0 +1,188 @@
+/* ─── Layout ────────────────────────────────────── */
+.home {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ─── Background grid ──────────────────────────── */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+/* ─── Ambient glows ────────────────────────────── */
+.glow {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.45;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.glow--1 {
+  width: 500px;
+  height: 500px;
+  top: -120px;
+  left: -100px;
+  background: #6c63ff;
+}
+
+.glow--2 {
+  width: 400px;
+  height: 400px;
+  bottom: -80px;
+  right: -60px;
+  background: #ff6584;
+}
+
+/* ─── Hero ─────────────────────────────────────── */
+.hero {
+  margin-bottom: 3.5rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: #eee;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #6c63ff, #ff6584);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: #999;
+  margin: 0;
+}
+
+/* ─── Cards grid ───────────────────────────────── */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.tool-card {
+  position: relative;
+  display: block;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #eee;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.card-glow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.tool-card:hover .card-glow {
+  opacity: 0.5;
+}
+
+.card-glow--purple {
+  background: #6c63ff;
+}
+
+.card-glow--pink {
+  background: #ff6584;
+}
+
+.card-content {
+  position: relative;
+  padding: 2rem 1.5rem;
+}
+
+.tool-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+}
+
+.tool-card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.tool-card p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+.card-cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a78bfa;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+.tool-card:hover .card-cta {
+  color: #c4b5fd;
+}
+
+/* ─── Footer ───────────────────────────────────── */
+.footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}

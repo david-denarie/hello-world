@@ -1,5 +1,6 @@
 package com.example.textreverser.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,7 +15,7 @@ import java.util.List;
 
 /**
  * Configuration de sécurité :
- * - CORS restreint aux origines autorisées
+ * - CORS restreint aux origines autorisées (configurable via propriétés)
  * - Headers de sécurité HTTP (X-Content-Type-Options, X-Frame-Options, HSTS, etc.)
  * - CSRF désactivé car API REST stateless
  * - Pas d'authentification requise (API publique)
@@ -22,6 +23,9 @@ import java.util.List;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+
+    @Value("${app.cors.allowed-origins:http://localhost:4200,https://localhost:4200}")
+    private List<String> allowedOrigins;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -61,12 +65,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
 
-        // Origines autorisées — à adapter selon l'environnement
-        configuration.setAllowedOrigins(List.of(
-            "http://localhost:4200",   // Angular dev server
-            "https://localhost:4200"
-        ));
-
+        configuration.setAllowedOrigins(allowedOrigins);
         configuration.setAllowedMethods(List.of("GET", "POST", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("Content-Type", "Accept"));
         configuration.setAllowCredentials(false);
